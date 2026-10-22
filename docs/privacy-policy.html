@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>プライバシーポリシー | 現在地の標高計</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif; line-height: 1.75; color: #1f2933; max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1 { font-size: 1.6rem; border-bottom: 3px solid #208AEF; padding-bottom: 8px; }
+    h2 { font-size: 1.2rem; margin-top: 2em; color: #0D1D36; }
+    h3 { font-size: 1.05rem; }
+    code { background: #f0f0f3; padding: 1px 6px; border-radius: 4px; }
+    .meta { color: #60646c; font-size: 0.9rem; }
+    hr { margin: 48px 0; border: none; border-top: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <h1>プライバシーポリシー（現在地の標高計）</h1>
+  <p>本プライバシーポリシーは、モバイルアプリケーション「現在地の標高計」（以下「本アプリ」）における利用者情報の取り扱いについて定めるものです。</p>
+
+  <h2>1. 取得する利用者情報および利用目的</h2>
+  <h3>(1) 位置情報（緯度・経度・高度・精度）</h3>
+  <ul>
+    <li><strong>取得方法</strong>：利用者の許可に基づき、端末の位置情報センサー（GPS / GNSS 等）から取得します。</li>
+    <li><strong>利用目的</strong>：現在地の標高（海抜）・GPS高度の算出と表示、同じ標高の地域・富士山何合目換算の表示、利用者が任意で記録した標高履歴の端末内保存とグラフ表示のため。</li>
+    <li><strong>取得タイミング</strong>：本アプリを画面上で利用している間（フォアグラウンド）のみ取得します。バックグラウンドでの位置情報の取得・追跡は一切行いません。</li>
+  </ul>
+  <h3>(2) 気圧センサー情報（hPa）</h3>
+  <p>気圧センサー搭載端末において、気圧換算高度の算出および補正のためにのみ端末内で使用します。</p>
+
+  <h2>2. 外部サービス（API）への情報送信</h2>
+  <p>地表の標高を取得するため、<strong>緯度・経度の数値のみ</strong>を以下の外部APIへ HTTPS 暗号化通信で送信します。</p>
+  <ol>
+    <li>国土地理院 標高API（<code>cyberjapandata2.gsi.go.jp</code>）</li>
+    <li>Open-Meteo Elevation API（<code>api.open-meteo.com</code>）</li>
+  </ol>
+  <p>氏名、メールアドレス、電話番号、端末識別子（広告ID等）など個人を特定できる情報は一切取得・送信しません。また、開発者のサーバーへ位置情報や利用履歴を送信・収集することもありません。</p>
+
+  <h2>3. 端末内へのデータ保存と削除方法</h2>
+  <p>「現在の標高を記録」ボタンで記録された履歴（標高・緯度・経度・日時、最大100件）は、利用者の端末内の暗号化ストレージにのみ保存されます。以下の方法でいつでも削除できます。</p>
+  <ol>
+    <li>本アプリ内の「履歴をクリア」ボタンをタップする</li>
+    <li>端末設定から本アプリのストレージを消去する、または本アプリをアンインストールする</li>
+  </ol>
+
+  <h2>4. 第三者提供・広告・解析ツール</h2>
+  <p>利用者の情報を第三者へ販売・提供することはありません。本アプリには広告モジュールや第三者トラッキングSDKは組み込まれていません。</p>
+
+  <h2>5. 免責事項</h2>
+  <p>本アプリが表示する標高・高度・位置情報は参考値であり、測量・登山・航空等の安全や正確性を保証するものではありません。本アプリの利用により生じた損害について、開発者は責任を負いかねます。</p>
+
+  <h2>6. 本ポリシーの変更</h2>
+  <p>本ポリシーは必要に応じて改定されることがあります。改定後の内容は本ページまたは本アプリ内「情報・規約」画面に掲載した時点で効力を生じます。</p>
+
+  <h2>7. お問い合わせ先</h2>
+  <ul>
+    <li><strong>開発者</strong>：airgroove0724</li>
+    <li><strong>連絡先</strong>：<a href="mailto:taku.isogai0724@gmail.com">taku.isogai0724@gmail.com</a></li>
+  </ul>
+  <p class="meta">制定日：2026年10月18日</p>
+
+  <hr />
+
+  <h1 lang="en">Privacy Policy (Current Elevation Meter)</h1>
+  <div lang="en">
+    <h2>1. Information We Process</h2>
+    <p><strong>Location (latitude, longitude, altitude, accuracy)</strong> is used only while the app is in the foreground to calculate and display your elevation, region comparisons, and history you choose to record. We never access your location in the background. <strong>Barometric pressure</strong> is processed locally on the device to calculate calibrated altitude.</p>
+    <h2>2. Transmission to Elevation APIs</h2>
+    <p>Only numerical latitude and longitude are sent over HTTPS to the GSI Elevation API (<code>cyberjapandata2.gsi.go.jp</code>) and the Open-Meteo Elevation API (<code>api.open-meteo.com</code>). No personally identifiable information or device/advertising identifiers are collected or transmitted. The developer operates no server that collects your data.</p>
+    <h2>3. Local Storage and Deletion</h2>
+    <p>Recorded elevation history (up to 100 entries) is stored only on your device using encrypted storage. You can delete it at any time with the "Clear History" button or by uninstalling the app.</p>
+    <h2>4. Third Parties</h2>
+    <p>We do not sell or share your data. The app contains no advertising or third-party tracking SDKs.</p>
+    <h2>5. Contact</h2>
+    <p>Developer: airgroove0724 / Contact: <a href="mailto:taku.isogai0724@gmail.com">taku.isogai0724@gmail.com</a></p>
+    <p class="meta">Effective date: October 18, 2026</p>
+  </div>
+</body>
+</html>
